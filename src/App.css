@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@200;500&display=swap");
+
+* {
+  font-family: "Lora", serif;
+}
+
+.borderCenter:nth-child(odd) {
+  border-right: 0.1px solid rgb(196, 196, 196, 0.25);
+}
+
+.gradient-fade {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Adjust this value based on your design */
+    background: linear-gradient(transparent, white);
+  }
+
+@media screen and (max-width: 768px) {
+  .borderCenter:nth-child(odd) {
+    border-right: none;
+  }
+  .borderCenter {
+    border-bottom: 1px solid rgb(196, 196, 196);
+  }
+}
